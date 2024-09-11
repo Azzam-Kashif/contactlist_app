@@ -16,6 +16,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Profile from "./components/profile";
 import { useState } from "react";
 import { auth } from "./components/firebase";
+import ContactList from "./components/ContactList";
 
 function App() {
   const [user, setUser] = useState();
@@ -37,6 +38,11 @@ function App() {
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<SignUp />} />
               <Route path="/profile" element={<Profile />} />
+              <Route path="/contacts" element={<ContactList />} />
+
+
+
+              
             </Routes>
             <ToastContainer />
           </div>
