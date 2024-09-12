@@ -17,6 +17,7 @@ import Profile from "./components/profile";
 import { useState } from "react";
 import { auth } from "./components/firebase";
 import ContactList from "./components/ContactList";
+import ProtectedRoute from './components/ProtectedRoute';
 
 function App() {
   const [user, setUser] = useState();
@@ -39,6 +40,11 @@ function App() {
               <Route path="/register" element={<SignUp />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/contacts" element={<ContactList />} />
+              {ContactList}
+              <Route element={<ProtectedRoute user={user} />}>
+                <Route path="/profile" element={<Profile />} />
+                <Route path="/contacts" element={<ContactList />} />
+              </Route>
 
 
 
