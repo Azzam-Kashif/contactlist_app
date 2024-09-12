@@ -4,15 +4,15 @@ Contact List App is a React-based application that allows users to manage contac
 
 # Features
 
-### Add, edit, and delete contacts
-### Search and sort contacts
-### User authentication (login and signup)
+ - Add, edit, and delete contacts
+ - Search and sort contacts
+ - User authentication (login and signup)
 
 # Tech Stack
 
-### Frontend: React, React Router, Bootstrap
-### Backend: Firebase Authentication, Firestore
-### Icons: React Icons
+- Frontend: React, React Router, Bootstrap
+- Backend: Firebase Authentication, Firestore
+- Icons: React Icons
 
 # Installation
 Follow these steps to set up the project locally:
